@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const feedRoutes = require('./routes/feed');
-const mongoConnect = require('./util/database');
+const { mongoConnect } = require('./util/database');
 
 const app = express();
 
@@ -18,7 +18,6 @@ app.use((req, res, next) => {
 
 app.use('/feed', feedRoutes);
 
-mongoConnect(client => {
-    console.log(client);
+mongoConnect(() => {
     app.listen(8080);
 });;
