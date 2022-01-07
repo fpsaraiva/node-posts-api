@@ -4,3 +4,8 @@ Projeto desenvolvido no curso [NodeJS - The Complete Guide (MVC, REST APIs, Grap
 
 Este projeto conecta em um frontend (em React) disponibilizado pelo professor. Aqui, subi apenas o backend - onde a maior parte 
 dos exercícios foram realizados.
+
+## Conceitos praticados:
+ * Desenho e implementação de API (CRUD);
+ * Implementação de autenticação JWT;
+ * Uso de banco de dados NoSQL.
